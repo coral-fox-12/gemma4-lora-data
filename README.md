@@ -1,8 +1,9 @@
 # gemma4-lora-data
 
-LoRA training data for the Kaggle **Gemma 4 Developer Agent** competition (E4B small-model track), used by `colab_lora.ipynb` in `coral-fox-12`'s gemma4 workspace.
+LoRA training data for the Kaggle **Gemma 4 Developer Agent** competition (E4B small-model track), used by `colab_lora.ipynb`.
 
 - `train_mix_v2.jsonl` — 3,738 chat-format SFT examples (~6.3M tokens), 50/50 programmatic agent trajectories (generated from real repo snapshots) and SWE-Gym SFT trajectories.
+- The file is stored in 4 chunks (`train_mix_v2.jsonl.part0` … `.part3`) because a single 29 MB upload fails through the uploader's egress proxy; `manifest.json` lists the parts + sha256. Reassemble with `cat train_mix_v2.jsonl.part* > train_mix_v2.jsonl` and verify the sha256.
 
 ## Provenance / licence note
 
