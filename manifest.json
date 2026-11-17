@@ -1,0 +1,13 @@
+{
+  "file": "train_mix_v2.jsonl",
+  "bytes": 29420816,
+  "lines": 3738,
+  "sha256": "248f127e7fefcaf1ee241359e716c35c9418801a2f2706be675697f71205fa5f",
+  "parts": [
+    "train_mix_v2.jsonl.part0",
+    "train_mix_v2.jsonl.part1",
+    "train_mix_v2.jsonl.part2",
+    "train_mix_v2.jsonl.part3"
+  ],
+  "reassemble": "cat train_mix_v2.jsonl.part* > train_mix_v2.jsonl"
+}
